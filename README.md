@@ -12,6 +12,23 @@ Material to Deliverable｜资料整理与交付 Skill
 
 这是一个面向学生、职场人和内容工作者的开源 Agent Skill。它会先检查材料、确认任务，再生成带来源索引的汇报、方案、复盘、调研或课程展示。这里的“知识资产”指这些可复用、可核验的文字成果，不是自动建立或维护知识库。
 
+## 安装
+
+克隆到 Claude Code 的 skills 目录：
+
+```bash
+git clone https://github.com/Lucian1u/material-to-deliverable.git \
+  ~/.claude/skills/material-to-deliverable
+```
+
+或使用 Skills CLI，安装到当前检测到的 Agent：
+
+```bash
+npx skills add Lucian1u/material-to-deliverable -g -y
+```
+
+安装后重启客户端。其他 Agent 环境可以直接把 [`SKILL.md`](SKILL.md) 作为 skill 入口加载。
+
 ## 为什么做这个项目
 
 资料存了不少，真正要用的时候，还是得重新读一遍。直接交给 AI，又可能只得到一份长摘要：哪些是事实，哪些是意见，关键结论出自哪里，都不够清楚。
